@@ -77,6 +77,7 @@ $ ./cidr.py intersect --left ranges4 --right ranges1
 192.168.0.0/16 is partially contained in 192.168.0.0/24
 10.0.2.0/30 is entirely contained in 10.0.2.0/24
 10.0.1.0/30 was not found
+```
 
 # Contribution
 
