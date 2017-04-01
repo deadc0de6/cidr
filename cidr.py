@@ -103,7 +103,8 @@ class Pycidr:
             for src in sources:
                 if src.overlaps(dst):
                     if VERBOSE:
-                        self._err('[DBG] %s overlaps with %s' % (str(src), str(dst)))
+                        self._err('[DBG] %s overlaps with %s' % (str(src),
+                                                                 str(dst)))
                     results.setdefault(src, []).append(str(dst))
         for src in sources:
             if src in results.keys():
