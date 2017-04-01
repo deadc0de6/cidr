@@ -78,3 +78,11 @@ $ ./cidr.py intersect --left ranges4 --right ranges1
 10.0.2.0/30 is entirely contained in 10.0.2.0/24
 10.0.1.0/30 was not found
 
+# Contribution
+
+If you want to contribute, feel free to do a PR.
+
+# License
+
+This project is licensed under the terms of the GPLv3 license.
+
