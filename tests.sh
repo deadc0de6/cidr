@@ -7,4 +7,4 @@ set -ev
 
 pep8 .
 pep8 tests/
-PYTHONPATH=. nosetests --with-coverage
+PYTHONPATH=. nosetests
