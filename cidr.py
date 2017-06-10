@@ -154,6 +154,7 @@ class Parser:
                     continue
                 if line == '':
                     continue
+                line = line.split('#')[0]
                 tmp = self._parse_line(line)
                 if not tmp:
                     continue
