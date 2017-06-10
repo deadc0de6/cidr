@@ -16,6 +16,7 @@ import sys
 import os
 import netaddr
 import ipaddress
+from datetime import datetime
 from docopt import docopt
 
 VERSION = '0.1'
@@ -166,6 +167,7 @@ if __name__ == '__main__':
     """ entry point """
     args = docopt(USAGE, version=VERSION)
     VERBOSE = args['--verbose']
+    starttime = datetime.now()
 
     pycidr = Pycidr()
 
@@ -184,5 +186,8 @@ if __name__ == '__main__':
         left = args['--left']
         right = args['--right']
         pycidr.intersect(left, right)
+
+    endtime = datetime.now()
+    sys.stderr.write('Duration: %s\n' % str(endtime - starttime))
 
     sys.exit(0)
