@@ -11,5 +11,5 @@ setup(
     url='https://github.com/deadc0de6/cidr',
     py_modules=['cidr'],
     scripts=['cidr.py'],
-    install_requires=['docopt',	'netaddr','ipaddress'],
+    install_requires=['docopt', 'netaddr', 'ipaddress'],
 )
