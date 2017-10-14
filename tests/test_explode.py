@@ -5,7 +5,6 @@ unittest for "explode"
 """
 
 import unittest
-import os
 
 from cidr import Pycidr
 
@@ -36,6 +35,7 @@ class TestExplode(unittest.TestCase):
 
 def main():
     unittest.main()
+
 
 if __name__ == '__main__':
     main()

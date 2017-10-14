@@ -5,7 +5,6 @@ unittest for "merge"
 """
 
 import unittest
-import os
 
 from cidr import Pycidr
 
@@ -35,6 +34,7 @@ class TestMerge(unittest.TestCase):
 
 def main():
     unittest.main()
+
 
 if __name__ == '__main__':
     main()
