@@ -56,11 +56,6 @@ class Pycidr:
     def _parse(self, arg):
         return self.parser.parse(arg)
 
-    def _load_entire_file(self, path):
-        """ load entire file content in memory """
-        with open(path, 'r') as f:
-            return [str(x) for x in parse_file(f)]
-
     def count(self, args):
         """ count total number of IPs """
         tot = 0
@@ -163,6 +158,7 @@ class Parser:
                         yield i
                 else:
                     yield tmp
+
 
 if __name__ == '__main__':
     """ entry point """
