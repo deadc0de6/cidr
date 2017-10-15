@@ -5,7 +5,6 @@ unittest for "count"
 """
 
 import unittest
-import os
 
 from cidr import Pycidr
 
@@ -35,6 +34,7 @@ class TestCount(unittest.TestCase):
 
 def main():
     unittest.main()
+
 
 if __name__ == '__main__':
     main()
